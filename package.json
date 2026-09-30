@@ -1,0 +1,13 @@
+{
+  "name": "sound-calspeed",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Calage de système son professionnel avec un smartphone (webapp / PWA)",
+  "type": "module",
+  "scripts": {
+    "start": "npx --yes http-server -c-1 -p 8080 .",
+    "test": "node --test tests/*.test.js",
+    "test:e2e": "node tests/e2e.cjs"
+  },
+  "license": "MIT"
+}
