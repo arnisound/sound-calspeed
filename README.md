@@ -32,8 +32,13 @@ npm test             # tests unitaires DSP (Node ≥ 20)
 npm run test:e2e     # test navigateur avec boucle acoustique simulée (Playwright + Chromium)
 ```
 
-Pour l'utiliser sur un téléphone : héberger le dossier en HTTPS (GitHub Pages, Netlify…), ouvrir la page,
-puis « Ajouter à l'écran d'accueil ».
+Pour l'utiliser sur un téléphone : héberger le dossier en HTTPS, ouvrir la page, puis « Ajouter à l'écran d'accueil ».
+
+### Déploiement GitHub Pages
+
+Le workflow `.github/workflows/pages.yml` publie le site à chaque push sur `main` (après les tests).
+Activation, une seule fois : *Settings → Pages → Build and deployment → Source : **GitHub Actions***.
+L'app est alors servie en HTTPS sur `https://<utilisateur>.github.io/sound-calspeed/`.
 
 ## Limites
 
